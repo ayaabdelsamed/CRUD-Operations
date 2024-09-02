@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container ">
+            <h1 class="title text-center pt-5">CRUD Operations With Node.js API</h1>
+            <div class="box p-5">
+                <div class="content p-5">
+                    <form class="Data" action="">
+                        <label  class="pb-2 pt-3" for="NameProduct" >Product Name :</label>
+                        <input  class="form-control"  type="text" placeholder="Enter Name" id="NameProduct">
+                        <label  class="pb-2 pt-3" for="PriceProduct">Product Price :</label>
+                        <input  class="form-control" type="text"  id="PriceProduct" placeholder="Enter Price">
+                        <label  class="pb-2 pt-3" for="Description" >Description</label>
+                        <input type="hidden" id="id">
+                        <textarea class="form-control"  name="" id="Description"></textarea>
+                    </form>
+                    <button id="add" onclick="getInputValue()" class="AddProduct btn btn-light mt-4">Add Product</button>
+                    <button id="Update"  onclick="updateProduct()" class="AddProduct btn btn-light mt-4">Update Product</button>
+                    
+                </div>
+            </div>
+            <div class="content-table my-2">
+                <table class="table text-center table-hover text-white">
+                    <thead>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </header>
+
+    <script src="js/main.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

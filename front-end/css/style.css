@@ -1,0 +1,48 @@
+body{
+    color: black;
+}
+.title{
+    color: aqua;
+}
+.box{
+
+}
+.Data{
+    display: flex;
+    flex-direction: column;
+    gap: 5;
+}
+label{
+    color: azure;
+}
+input{
+    background-color: aliceblue;
+    height:40px ;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 0px 5px 10px;
+    outline: none;
+    transition: .3s;
+}
+.content{
+    border: solid 1px #7777;
+    border-radius: 5px;
+}
+.content:hover{
+    border-color: #a6a6a677;
+}
+input:hover,
+textarea:hover{
+    border-radius: 3px;
+    border-color: aqua;
+}
+textarea{
+    background-color: aliceblue;
+    height:60px ;
+}
+input::placeholder{
+    color: black;
+}
+#Update{
+display: none;
+}
